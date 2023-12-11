@@ -111,12 +111,23 @@ def create_and_draw_mst_with_plotly(mst, start_room):
             font=dict(size=10)
         )
 
-    fig.update_layout(title_text="Hospital Layout MST", title_x=0.5)
+    fig.update_layout(title_text="Layout", title_x=0.5)
     fig.show()
 
 
 edges = [
+    ('Room1', 'Room2', 3, 0.6),
+    ('Room2', 'Room3', 1, 0.7),
+    ('Room3', 'Room4', 2, 0.2),
+    ('Room4', 'Room5', 1, 0.4),
+    ('Room1', 'Room6', 2, 0.5),
+    ('Room6', 'Room7', 3, 0.6),
+    ('Room7', 'Room8', 1, 0.3),
+    ('Room5', 'Room8', 4, 0.5),
+    ('Room8', 'Room9', 2, 0.7),
+]
 
+edges1 = [
     # Connections from Outside
     ('Outside', 'Main Entry', 1, 0.3),
     ('Outside', 'Kitchen', 1, 0.3),
@@ -182,7 +193,6 @@ edges = [
     ('Sub Waiting Area', 'Emergency Service', 4, 0.5),
     ('Sub Waiting Area', 'Clinic', 1.5, 0.5),
 
-
     # Clinic Area Connections
     ('Clinic', 'Clinic Office', 1.5, 0.5),
     ('Clinic', 'Clinic Exam', 1, 0.3),
@@ -234,12 +244,14 @@ edges = [
 
     # Connections from Materials
     ('Materials', 'Left elevator Corridor', 1, 0.5),
-
 ]
 
 
 # Assuming the first room in the first edge is the start room (door)
-start_room = edges[0][0]
-graph = create_graph_with_probabilities(edges)
+start_room = edges1[0][0]  # change this according to the dataset name
+# change this according to the dataset name
+graph = create_graph_with_probabilities(edges1)
+
+
 mst = prim_with_probabilities(graph, start_room)
 create_and_draw_mst_with_plotly(mst, start_room)
