@@ -6,10 +6,10 @@
 * [Overview](#overview)
 * [Description](#Description)
 * [Features](#features)
-* [How to use](#Howtouse)
+* [How to use](#How-to-use)
 * [Requirements](#Requirements)
-* [Room for Improvement](#Room for Improvement)
-* [Additinal Notes](#Additinal Notes)
+* [Room for Improvement](#Room-for-Improvement)
+* [Additinal Notes](#Additional-Notes)
 <!-- <!-- * [License](#license) -- -->
 
 ## Overview
@@ -26,7 +26,7 @@ The program utilizes a graph-based representation of a hospital blueprint where 
 * Flexible data structure to accommodate various building layouts.
 
 
-## How to Use
+## How-to-Use
 1. **Clone/Download the Repository**: 
 Ensure you have Git installed on your system to clone the repository or simply download the ZIP file.
 ```bash
@@ -53,13 +53,13 @@ pip install plotly networkx heapq numpy
 ```
 
 
-## Room for Improvement
+## Room-for-Improvement
 * Integration with real-time data for dynamic route optimization.
 * Improved human detection capabilities simulation.
 * User interface for emergency responders to interact with the system.
 
 
-## Additional Notes
+## Additional-Notes
 This project is part of a research study aimed at improving emergency response efficiency through technological innovation. It is designed as a proof of concept and serves as a foundation for further development and integration into actual fire rescue systems. Contributions and feedback are welcome to enhance the functionality and applicability of the program.
 
     
