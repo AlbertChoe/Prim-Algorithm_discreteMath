@@ -9,7 +9,7 @@
 * [How to use](#How-to-use)
 * [Requirements](#Requirements)
 * [Room for Improvement](#Room-for-Improvement)
-* [Additinal Notes](#Additional-Notes)
+* [Additional Notes](#Additional-Notes)
 <!-- <!-- * [License](#license) -- -->
 
 ## Overview
